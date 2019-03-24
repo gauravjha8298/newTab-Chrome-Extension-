@@ -1,0 +1,38 @@
+{
+	"name": "newTabber",
+	"description": "Replace chrome's boring new tab with a sexy New Tab ",
+	"version": "1.0.0",
+	"incognito": "split",
+	"chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Galby Search",
+      "keyword": "ds",
+      "is_default": true,
+      "encoding": "UTF-8",
+      "favicon_url": "https://jhagaurav.000webhostapp.com/tabImg/seacrhyahoo_32.png",
+      "search_url": "http://search.yahoo.com/search;_ylt=A0oG7l7PeB5P3G0AKASl87UF?p={searchTerms}",
+      "suggest_url": "http://search.yahoo.com/search;_ylt=A0oG7l7PeB5P3G0AKASl87UF?p={searchTerms}"
+    }
+  },
+    "icons": {
+        "16": "images/icon/icon_16.png",
+        "48": "images/icon/icon_48.png",
+        "128": "images/icon/icon_128.png"
+    },
+    "browser_action": {
+    "default_icon": "images/icon/icon_128.png"
+  	},
+    "permissions":[
+    	"storage",
+    	"history",
+    	"tabs",
+    	"topSites",
+    	"contextMenus",
+    	"topSites"
+    ],
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+	"manifest_version": 2
+}
